@@ -1,17 +1,20 @@
 package methods;
 
 public class handManagement {
-    public void handSort(int[] array) {
+    public void handSort(int[] hand) {
         int aux = 0;
-        //buble sort que ordena ascendentment
-        for (int i = 0; i < (array.length - 1); i++) {
-            for (int j = 0; j < ((array.length - i) - 1); j++) {
-                if (array[j] > array[j+1]) {
-                    aux = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = aux;
+
+        for (int i = 0; i < (hand.length - 1); i++) {
+            for (int j = 0; j < ((hand.length - i) - 1); j++) {
+                if (hand[j] > hand[j+1]) {
+                    aux = hand[j];
+                    hand[j] = hand[j+1];
+                    hand[j+1] = aux;
                 }
             }
         }
+    }
+    public void showHand (int[] hand){
+        
     }
 }
